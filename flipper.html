@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Random Color Flipper</title>
+        <link rel="stylesheet" href="flipper.css">
+    </head>
+    <body>
+        <script>
+            function chcolor(){
+                const colors = ['tomato', 'mediumseagreen', 'cornflowerblue', 'coral', 'gold','palevioletred','mediumorchid','cyan','darkcyan'];
+                document.body.style.background = colors[Math.floor(Math.random() * colors.length)];
+            }
+
+        </script>
+        <div>
+            <button class="button1" role="button" onclick="chcolor()"><span class="text">Change Color</span></button>
+
+        </div>
+
+
+
+ 
+    </body>
+</html>
